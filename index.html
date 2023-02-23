@@ -1,0 +1,132 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUDS</title>
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+<br>
+<div class="containerImage d-flex justify-content-center">
+<img src="crud.png" alt="" class="w-25 " >
+
+
+</div>
+
+    <div class="container">
+     
+      <h1 class="h1">Product Mangment System</h1>
+
+      <div class="form-group">
+        <label for="productNameInput">Product Name</label>
+        <input
+          class="form-control my-3"
+          type="text"
+          name=""
+          id="productNameInput"
+        />
+
+        <label for="productPriceInput">Product Price</label>
+        <input
+          class="form-control my-3"
+          type="text"
+          name=""
+          id="productPriceInput"
+        />
+
+        <label for="productCategoryInput">Product Category</label>
+        <!-- <input class="form-control my-3" type="text" name="" id="productCategoryInput"> -->
+
+        <select name="Category" id="productCategoryInput" class="form-control">
+          <optgroup label="Swedish Category">
+            <option value="Mobile">Mobile</option>
+            <option value="TV">TV</option>
+          </optgroup>
+        </select>
+        <br />
+
+        <label for="productDescInput">Product Desc</label>
+        <input
+          class="form-control my-3"
+          type="text"
+          name=""
+          id="productDescInput"
+        />
+
+  <!-- <button onclick="addProductFirst()" class="btn btn-success d-none">
+          Add Pro First
+        </button> -->
+        
+        <button id="addBtn" onclick="addProductLast ()" class="btn-width btn btn-info">Add Product</button>
+     
+
+
+
+        <button onclick="deleteProductFirst ()" class="btn btn-danger">
+          Delete First
+        </button>
+        <button onclick="deleteProductLast ()" class="btn btn-warning">
+          Delete Last
+        </button>
+
+        <!-- Search InPut---------------------------- -->
+        <br /><br /><br />
+        <input
+          oninput="search(this.value)"
+          class="form-control my-3 align-items-center"
+          type="text"
+          name=""
+          placeholder="Search..."
+        />
+<!-- ---------------------------------------------- -->
+
+
+      </div>
+    </div>
+
+
+<div class="container">
+
+  <table class="table my-5 text-center bg-body-secondary">
+
+
+    <thead class="tableHead">
+      <th>Index</th>
+      <th>ID</th>
+      <th>Product Name</th>
+      <th>Product Price</th>
+      <th>Product Category</th>
+      <th>Product Desc</th>
+      <th>Update</th>
+      <th>Delete</th>
+      <th>Repeat</th>
+    </thead>
+    
+    <tbody id="tableBody">
+      <!-- <tr>
+                  <td>0</td>
+                  <td id="namen">Samsung</td>
+                  <td id="pricep">1000</td>
+                  <td id="categoryc">Mobile</td>
+                  <td id="descd">Good</td>
+                  <td> <button  class="btn btn-outline-danger">Update</button></td>
+                  <td> <button class="btn btn-outline-dark">Delete</button></td> 
+
+
+              </tr> -->
+    </tbody>
+  </table>
+
+</div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+
+  </body>
+</html>

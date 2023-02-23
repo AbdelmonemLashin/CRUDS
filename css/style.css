@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 ;
+    /* font-size: 20px; */
+ 
+}
+
+.tableHead{
+border: 3px;
+}
+
+.h1{
+    color: black;
+    text-align: center;
+}
+/* .tableraw{
+    width: 100%;
+    height: 100vh;
+} */
+
+.test {
+
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(236, 228, 228);
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.div {
+    height: 250px;
+    width: 25%;
+    padding: 10px;
+    color: white;
+     /* display: flex;
+    justify-content: flex-start;
+     align-items: center; 
+    align-content: flex-start;
+    flex-wrap: wrap;  */
+}
+
+.div1 {
+    background-color: red;
+}
+
+.div2 {
+    background-color: green;
+}
+
+.div3 {
+    background-color: yellow;
+}
+
+.div4 {
+    background-color: #09c;
+}
+
+.div5{
+    background-color: blue;
+}
+
+.div6 {
+    background-color: midnightblue;
+}
+
+
+.div222{
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+}
+
+
+.btn{
+    height: 50px;
+    width: 150px;
+}
+
+.inp{
+    color: black;
+}
+
+
+.parent{
+
+height: 600px;
+width: 600px;
+background-color: red;
+
+/* display: flex;
+justify-content: center;
+align-items: center; */
+
+display: flex;
+
+}
+
+.child{
+
+    /* height: 150px;
+    width: 150px; */
+    background-color: blue;
+
+/* position: absolute;
+top: 50%;
+left: 50%;
+
+transform:translate (-50%, -50%); */
+margin: auto;
+}
